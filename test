@@ -1,0 +1,1375 @@
+Demo Portal User
+Examples
+Python Examples
+Anup ChavdaBasics
+→ EXPLICIT LINE JOINING using '\' Operator
+print ":EXPLICIT LINE JOINING EXAMPLE"
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print "ALL ITEMS", x
+print "NUMBES DIVISIBLE BY 2 and 3"
+for item in x:
+if item % 2 == 0 and \
+item % 3 == 0:
+print "ITEM", item
+→ ESCAPE SEQUENCES
+print ":ESCAPE SEQUENCE EXAMPLE"
+print "RESPECTED SIR,\nTHI IS TO NOTIFY THAT I HAVE COMPLETE THE
+FOLLOWING PHASES\n\tANALYSIS\n\tDESIGN\n\nKINDLY GO THROUGH IT AND
+DO THE \"NEEDFUL\"."
+→
+IDENTATION
+print ":IDENTATION EXAMPLE"
+for i in range(1, 100):
+if i % 2 == 0:
+print "EVEN No", i
+→ UNDEFINED VARIABLES
+x = 10
+print ":XXX",
+x = [1, 2, 3,
+print ":XXX",
+x = 'Python'
+print ":XXX",
+x, "TYPE::", type(x)
+4, 5, 6, 7, 8, 9, 10]
+x, "TYPE::", type(x)
+x, "TYPE::", type(x)
+Python Examples
+Anup Chavda→ SINGLE LINE CODING
+x = 10
+if x > 5: print "X is greater than 5", x
+Python Examples
+Anup ChavdaSimple Data Types
+→ STRINGS
+stex = 'Python'
+print stex, type(stex)
+stx = 's'
+print stx, type(stex)
+strx_null = '' #This is False with String
+print strx_null, type(strx_null)
+→ INTEGER
+inte = 10
+print inte, type(inte)
+inte = 0 # This is False in Integer
+if inte:
+print "INT"
+else:
+print "NOT INT"
+→ FLOAT
+flo = 4.5
+print flo, type(flo)
+flo = 0.0 # This is False in Float
+→ BOOLEAN
+bool1 = True
+print bool1, type(bool1)
+bool2 = False # This is False in boolean and at all places!
+Python Examples
+Anup ChavdaOperators
+→ Arithmatic Operators
+a = 3
+b = 6
+c = 5
+add = a + b
+print "ADDD:", add
+sub = b - a
+print "SUB", sub
+mul = a * b
+print "MUL", mul
+div = b / a
+print "DIV", div
+mod = c % a
+print "MOD", mod
+pow = c ** a
+print ":POW;", pow
+floor_div = c // a
+print ":FLOOR_DIV", floor_div
+→ Bitwise Operators
+a = 2
+b = 5
+left_shift = b << a # 101 ==> 10100
+print "LEFT SHIFT", left_shift
+right_shift = b >> a # 101 ==> 001
+print "RIGHT SHIFT", right_shift
+bit_and = a & b # 010 & 101 ==> 000
+print "BIT AND", bit_and
+bit_or = a | b # 010 | 101 ==> 111
+print "BIT OR", bit_or
+bit_xor = a ^ b # 010 ^ 101 ==> 111 because XOR = ab'+ba'
+print "BIT XOR", bit_xor
+bit_not = ~a # 010 ==> 011 because negate = -(x+1)
+print "BIT NOT", bit_not
+Python Examples
+Anup Chavda→ Relational Operators
+x = 10
+if x > 5:
+print ":X IS GREATER THAN 5"
+if x < 11:
+print "X IS LESS THAN 11"
+if x >= 10:
+print "X IS GREATER THAN EQUAL TO 10"
+if x <= 10:
+print "X IS LESS THAN EQUAL TO 10"
+if x == 10:
+print "X IS 10"
+if x != 5:
+print "X IS NOT 5"
+if x <> 5:
+print "X IS NOT 5 at all"
+if x is 10:
+print "YES, X is 10"
+if x is not 11:
+print "NO X is not 11"
+→ Logical Operators
+x = 10
+y = 15
+if x == 10 and y == 15:
+print "BOTH CONDITION ARE TRUE"
+if x >= 10 or y != 15:
+print "ATLEASE ONE IS TRUE"
+if not x > 10:
+print "THE OPP COND IS FALSE"
+Python Examples
+Anup ChavdaExpressions
+→
+Literal Expressions
+x = 10 * 20 + 34 - 12 / 2
+print ":LITERAL EXPRESSION", x
+a
+b
+c
+d
+e
+→
+=
+=
+=
+=
+=
+10
+15
+13
+14
+8
+Variable Expressions
+result1 = a + b * c - d / e
+print "RESULT 1", result1
+result2 = (a + b) * c - d / e
+print "RESULT2", result2
+Python Examples
+Anup ChavdaControl Structures
+→ if - elif – else
+x = '0.0'
+if isinstance(x, int):
+print "X IS INTEGER"
+elif isinstance(x, float):
+print "X IS FLOAT"
+elif isinstance(x, bool):
+print "X IS BOOLEAN"
+elif isinstance(x, str):
+print "X IS STRING"
+else:
+print "X IS A COMPLEX DATA TYPE"
+→ while - else
+x = 0
+while x <
+print
+x = x
+else:
+print
+10:
+"XXX:", x
++ 1
+"X IS", x
+→ for - else
+for i in range(1, 10):
+print ":XXX", i
+else:
+print "ELSE OF FOR:"
+Python Examples
+Anup Chavda→ break
+counter = 0
+for i in range(1, 50):
+if i % 2 == 0:
+counter += 1
+if counter > 10:
+print "C", counter
+break
+→ continue
+counter = 0
+for i in range(1, 50):
+if i % 2 != 0:
+continue
+print "I", i
+counter += 1
+print "C", counter
+Python Examples
+Anup ChavdaMethods/Functions
+→ METHOD/FUNCTION DEFINITION
+def print_hello():
+print "Hello"
+print "THE METHOD CALLING::"
+print_hello()
+→ METHOD/FUNCTION WITH ARGUMENT
+def print_hello(name):
+print "Hello", name
+print "THE METHOD WITH ARGUMENT"
+print_hello('Anup')
+→ ARGUMENTS AND RETURN
+def sum(a, b):
+c = a + b
+return c
+#
+return a+b
+print "METHOD WITH RETURN"
+sum(10, 15)
+→ LOCAL VARIABLE
+x = 10
+def print_x():
+x = 20
+print "LOCAL X", x
+print_x()
+print "X", x
+Python Examples
+Anup Chavda→ GLOBAL VARIABLE
+x = 10
+def print_x():
+global x
+x = 20
+print "GLOBAL X", x
+print_x()
+print "X", x
+→ Keyword/Default Parameters
+def power(num, pow=1):
+return num ** pow
+print ":CALLING WITH POWER"
+pow1 = power(2, 3)
+print pow1
+print ":CALLING WITHOUT POWER"
+pow2 = power(5)
+print pow2
+→ NESTED FUNCTION
+def mul_add(a, b, c):
+print "MAIN FUNCTION CALLED"
+def mul(x, y):
+print "NESTED FUNCTION CALLED"
+return x * y
+e = a + b
+return mul(e, c)
+result = mul_add(2, 5, 6)
+print "RESULT OF NESTED FUNCTION", result
+Python Examples
+Anup ChavdaData Structures
+→ LIST DEFINITIONS
+## HOMOGENEOUS LISTS
+int_x = [1, 2, 3, 4, 5, 6]
+print "INTX", int_x, type(int_x)
+float_x = [1.2, 3.5, 4.6, 2.6]
+print "FLOATX", float_x, type(float_x)
+str_x = ['a', 'b', 'c', 'd']
+print "INTX", str_x, type(str_x)
+str2_x = ['help', 'run']
+print "INTX", str2_x, type(str2_x)
+## HETEROGENOUS LIST
+het_x = [1, 2.5, 's', 5, 'f', 4.5, 'run']
+print "HETX", het_x, type(het_x)
+→ LIST FUNCTIONS
+int_x.append(7)
+print "APPEND ELEMENT", int_x
+int_x.pop()
+print "POP ELEMENT", int_x
+int_x.pop(2)
+print "POP SECOND ELEMENT", int_x
+int_x.remove(5)
+print "REMOVE 5 from LIST", int_x
+int_y = [11, 12, 13]
+int_z = int_x.__add__(int_y)
+print "ADD LIST", int_z
+int_w = int_x + int_y
+print "ADD LIST1", int_w
+int_x.extend(int_y)
+#int_x += int_y SAME AS ABOVE
+print "ADD LIST2", int_x
+Python Examples
+Anup Chavdax_list = range(1, 8)
+print "LIST USING RANGE", x_list
+print "INDEX OF ELEMENT 5 IS", x_list.index(5)
+print "ATTRS & METHODS OF LIST", dir(x_list)
+x_list.insert(2, 5) # INDEX,VALUE
+print "INSERT IN LIST", x_list
+print "COUNT OF ELEMENT 5 IN LIST IS", x_list.count(5)
+x_list.reverse()
+print "X LIST IS REVERSED", x_list
+unsorted_list = [1, 7, 9, 3, 5, 2, 11, 4]
+unsorted_list.sort()
+print "UNSORTED LIST IS SORTED", unsorted_list
+x = 10
+new_list = [x]
+print "CREATING A LIST FROM A SINGLE ELEMENT", new_list
+→ TUPLE DEFINITIONS
+#### HOMOGENEOUS TUPLE
+my_tuple = (1, 3, 5, 2, 4, 8, 9)
+#### HETEROGENEOUS TUPLE
+your_tuple = (3, 4.5, 5, 6, 7,'help')
+→ TUPLE FUNCTIONS
+#### LIST ALL METHODS AND ATTRIBUTES OF TUPLE
+print dir(my_tuple)
+new_tuple = my_tuple.__add__(your_tuple)
+print "NEW TUPLE", new_tuple
+new_tuple1 = my_tuple + your_tuple
+print "NEW TUPLE1", new_tuple1
+print "MY TUPLE", my_tuple
+Python Examples
+Anup Chavdaprint "COUNT OF ELEMENT 3 IN NEW TUPLE", new_tuple.count(3)
+print "INDEX OF ELEMENT 5 IN NEW TUPLE", new_tuple.index(5)
+x = [1, 2, 3, 4, 5, 6, 7]
+x_tuple = tuple(x)
+print "LIST CONVERTED TO TUPLE", x_tuple
+x_list = list(x_tuple)
+print "TUPLE CONVERTED TO LIST", x_list
+→ DICTIONARY DEFINITION
+trans_dict = {'one':'wahed', 'two':'itnen', 'three':'talata'}
+print "VALUE OF KEY 'one' IS", trans_dict['one']
+→ DICTIONARY UPDATIONS
+trans_dict['four'] = 'arba'
+print "ADDED KEY-VAL PAIR FOR FOUR IN DICTIONARY", trans_dict
+del trans_dict['four']
+print "DELETED THE PAIR HAVING THE KEY 'four'", trans_dict
+new_dict = {'a':[1, 2, 3, 'a', (15, 643), 'x']}
+print "ACCESS VALUES IN ITERABLES RECURSIVELY",new_dict['a'][4][0]
+→ DICTIONARY FUNCTIONS
+print "ATTRS AND FUNCTIONS OF DICTIONARY", dir(trans_dict)
+print "LIST KEYS OF DICTIONARY", trans_dict.keys()
+print "LIST VALUES OF DICTIONARY", trans_dict.values()
+print "LIST OF TUPLE HAVING KEY-VAL PAIR", trans_dict.items()
+print "ITER ITEMS", trans_dict.iteritems()
+for key, val in trans_dict.iteritems():
+print "KEY", key
+print "VAL", val
+Python Examples
+Anup Chavdax = [('a', 1), ('b', 2), ('c', 3), ('d', 4)]
+list_dict = dict(x)
+print "LIST CONVERTED TO A DICTIONARY", list_dict
+x = {'a':10, 'b':20, 'c':30}
+x.clear()
+print "CLEAR THE COMPLETE DICTIONARY", x
+y = list_dict
+y['e'] = 5
+print "TWO OBJECTS OF THE SAME DICTIONARY", list_dict, y
+z = list_dict.copy()
+z['f'] = 6
+print "SEPERATE COPY OF DICTIONARY", z, list_dict
+val = list_dict.get('d', 0)
+print "GET THE VALUE OF KEY 'd' IF KEY IN DICT OR GET DEFAULT 0",
+val
+if list_dict.has_key('d'):
+print "VALUE OF KEY 'd' IF IT EXISTS", list_dict['d']
+print "ITER KEYS", list_dict.iterkeys()
+for key in list_dict.iterkeys():
+print "KEY", key
+print "ITER VALUES", list_dict.itervalues()
+for val in list_dict.itervalues():
+print "VALUE", val
+print "DICTIONARY BEFORE POPPED", list_dict
+val = list_dict.pop('a', 0)
+print "POPPED VALUE OF KEY 'a'", val
+print "DICTIONARY AFTER POPPED", list_dict
+tuple_pair = list_dict.popitem()
+print ":TUPLE PAIR", tuple_pair
+print "POPPED DICT", list_dict
+my_dict = {}
+res = my_dict.setdefault('a', 2)
+print ":RES:", res
+print "MY DICT", my_dict
+Python Examples
+Anup Chavdares =
+print
+print
+res =
+print
+print
+my_dict.setdefault('a', 5)
+":RES1:", res
+"MY DICT1", my_dict
+my_dict.setdefault('a', 4)
+"RES2:", res
+"MYDICT2", my_dict
+new_dict = {'a':10, 'b':30, 'r':50, 'z':40}
+list_dict.update(new_dict)
+print "UPDATED DICT", list_dict
+→ STRINGS DEFINITIONS
+strx = 'HELLO'
+stry = 'H'
+strz = ''
+→ STRING OPERATIONS
+strw = strx + stry
+print "CONCAT TWO STRINGS", strw
+# PRINTS ALL STRING FUNCTIONS AND ATTRIBUTES
+print dir(strx)
+→ STRING FUNCTIONS
+strx = 'anup'
+res = strx.capitalize()
+print "MAKE THE FIRST CHAR CAPITAL", res
+strx = 'HELPING HAND HAS NO BARS'
+count = strx.count('H')
+print "Count of H in the string is", count
+res =
+print
+res =
+print
+strx.startswith('HELP')
+"STARTSWITH", res
+strx.endswith('RS')
+"ENDSWITH", res
+Python Examples
+Anup Chavdastrx = 'HOW WILL I FIND 1 MY STRING INSIDE A STRING 2'
+result = strx.find('STRING')
+print "SUBSTRING FIND FROM LEFT", result
+result = strx.rfind('STR')
+print "SUBSTRING FIND FORM RIGHT", result
+indx = strx.index('R')
+print "INDEX OF R", indx
+rindx = strx.rindex('R')
+print "INDEX OF R FROM RIGHT", rindx
+strx = 'H1B4C2CC'
+alnum = strx.isalnum()
+print "IS STRING ALPHANUMERIC?", alnum
+al = strx.isalpha()
+print "IS STRING ALPHABETIC?", al
+num = strx.isdigit()
+print "IS STRING NUMERIC OR HAVING ALL DIGITS?", num
+upper = strx.isupper()
+print "IS THE STRING IN UPPERCASE?", upper
+lower = strx.islower()
+print "IS THE STRING IN LOWERCASE?", lower
+space = strx.isspace()
+print "IS THE STRING HAVING ONLY SPACE?", space
+x = 'Help me out with split and join.\nSure,how can I help you?'
+split_list = x.split(' ')
+print "SPLIT LIST FROM STRING", split_list
+rsplit_list = x.rsplit(' ', 3)
+print "RIGHT SPLIT LIST FROM STRING", rsplit_list
+split_line = x.splitlines(2)
+print "SPLIT LINE", split_line
+join_str = ','.join(split_list)
+print "JOIN STRING FROM THE LIST OF STRINGS", join_str
+lower_str = strx.lower()
+print "STRING CONVERTED TO LOWER CASE", lower_str
+upper_str = lower_str.upper()
+print "STRING CONVERTED TO UPPER CASE", upper_str
+swap_case = strx.swapcase()
+print "STRING WITH CASE SWAPPED", swap_case
+title_str = strx.title()
+print "TITLED STRING", title_str
+Python Examples
+Anup Chavdastrx = 'help me out'
+left_just = strx.ljust(18, '.')
+print "LEFT JUSTIFIED WITH PADDING", left_just
+right_just = strx.rjust(18, '.')
+print "RIGHT JUSTIFIED WITH PADDING", right_just
+centralized = strx.center(18, '-')
+print "MAKE IT CENTER WITH PADDING", centralized
+strx = '
+HELP
+'
+lstr = strx.lstrip()
+print "LEADING WHITE SPACES REMOVED", lstr
+rstr = strx.rstrip()
+print "TRAILING WHITE SPACES REMOVED", rstr
+strp = strx.strip()
+print "STRIPPED STRING", strp
+strx = "INSTALL THE NEW SOFTWARE THAT HAS NEW FEATURES"
+part = strx.partition('NEW')
+print "PARTITIONED STR", part
+rpart = strx.rpartition('NEW')
+print "RIGHT PARTITIONED STR", rpart
+rep_str = strx.replace('NEW', 'LATEST', 1)
+print "REPLACE SUBSTRING", rep_str
+strx = '10'
+zfill_strx = strx.zfill(4)
+print "ZERO FILLED STRX", zfill_strx
+→
+SET DEFINITION
+x = range(1, 6)
+y = range(3, 9)
+set_x = set(x)
+set_y = set(y)
+# PRINTS ALL SET FUNCTIONS AND ATTRIBUTES
+print dir(set_x)
+Python Examples
+Anup Chavda→
+SET FUNCTIONS
+set_x.add(6)
+print "ADD ELEMENT 6 IN SET X", set_x
+set_x.remove(6)
+print "REMOVE ELEMENT 6 FROM SET X", set_x
+res = set_x.pop()
+print "ARBITARY SET", res
+print "REMOVE 1st ELEMENT FROM SET", set_x
+set_x.clear()
+print "CLEAR SET",set_x
+set_z = set_x.copy()
+set_z.add(8)
+print "SET_Z", set_z
+print "SET_X", set_x
+set_w
+print
+set_w
+print
+set_w
+print
+set_w
+print
+= set_x.difference(set_y)
+"DIFFERENCE OF SET X AND SET Y AS SET W", set_w
+= set_x.intersection(set_y)
+"INTERSECTION OF SET X AND SET Y AS SET W", set_w
+= set_x.union(set_y)
+"UNION OF SET X AND SET Y AS SET W", set_w
+= set_x.symmetric_difference(set_y)
+"SYMMETRIC DIFFERENCE", set_w
+res = set_x.issubset(set_z)
+print "TRUE IS SET X IS A SUBSET OF SET Z", res
+res = set_z.issuperset(set_x)
+print "TRUE IF SET Z IS A SUPERSET OF SET X", res
+set_w = set(range(11, 18))
+res = set_x.isdisjoint(set_w)
+print "TRUE IF BOTH SET X AND SET Z ARE DIFFERENT SET AND HAVE
+NULL INTERSECTION", res
+set_x.update(set_w)
+print "SET X UPDATED WITH ELEMENT OF SET W", set_x
+Python Examples
+Anup ChavdaIndexing
+→ INDEXING IN LOOP
+x = [1, 2, 3, 4, 5, 6, 7]
+print
+print
+print
+print
+"FIRST ELEMENT", x[0]
+"SECOND ELEMENT", x[1]
+"LAST ELEMENT", x[-1]
+"SECOND LAST ELEMENT", x[-2]
+→ INDEXING IN TUPLE
+y = (1, 2, 3, 4, 5)
+print
+print
+print
+print
+"FIRST ELEMENT", y[0]
+"SECOND ELEMENT", y[1]
+"LAST ELEMENT", y[-1]
+"SECOND LAST ELEMENT", y[-2]
+→ INDEXING IN STRING
+z = 'SerpentCS'
+print
+print
+print
+print
+"FIRST CHARACTER", z[0]
+"SECOND CHARACTER", z[1]
+"LAST CHAR", z[-1]
+"SECOND LAST CHARACTER", z[-2]
+Python Examples
+Anup ChavdaLooping Without Index
+→ LOOPING IN LIST
+for ele in range(1, 13):
+print ele,
+x = [1, 2, 3, 4, 5, 6, 7, 8]
+for ele in x:
+print ele
+→ LOOPING IN TUPLE
+y = (1, 2, 3, 4, 5, 6, 7, 8)
+for item in y:
+print item
+→ LOOPING IN STRING
+my_str = 'SerpentCS'
+for char in my_str:
+print char
+→ LOOPING IN DICTIONARY
+my_dict = {'a':1, 'b':2, 'c':3, 'd':4}
+for key,val in my_dict.iteritems():
+print "Key",key
+print "Value",value
+for key in my_dict.iterkeys():
+print "Key",key
+for val in my_dict.itervalues():
+print "Val",val
+Python Examples
+Anup ChavdaOperators for iterables
+→ IN AND NOT IN OPERATORS
+a = 5
+if a in x:
+print "Element is in List"
+b = 10
+if b not in x:
+print "Element is not in List"
+→ SLICING USING : and ::
+#### LIST
+x = range(1, 10)
+print "FIRST THREE ELEMENTS", x[:3]
+print "THREE ELEMENTS STARTING FROM INDEX 3 to 6", x[3:6]
+print "LAST 3 ELEMENTS", x[-3:]
+print "ALL ELEMENTS EXCEPT THE LAST ELEMENT", x[:-1]
+#### TUPLE
+x = tuple(x)
+print "FIRST THREE ELEMENTS", x[:3]
+print "THREE ELEMENTS STARTING FROM INDEX 3 to 6", x[3:6]
+print "LAST 3 ELEMENTS", x[-3:]
+print "ALL ELEMENTS EXCEPT THE LAST ELEMENT", x[:-1]
+#### STRING
+x = 'My name is Anup'
+print "FIRST THREE CHARACTERS", x[:3]
+print "THREE CHARACTERS STARTING FROM INDEX 3 to 6", x[3:6]
+print "LAST 4 CHARACTERS", x[-4:]
+print "ALL CHARACTERS EXCEPT THE LAST ELEMENT", x[:-1]
+#### SLICING WITH JUMPS
+x = range(10)
+print "ODD ELEMENTS", x[1:10:2] #[start:end:jump]
+Python Examples
+Anup ChavdaObject Oriented Programming
+→ Class Definition, Object Creation and
+Calling a method of class
+class my_class:
+def print_hello(self):
+print "HELLO"
+my_obj = my_class()
+my_obj.print_hello()
+→ Calling the class method inside the class
+from another method using self
+class my_cls:
+def print_hello(self):
+print "HELLO"
+def call_hello(self):
+self.print_hello()
+m_obj = my_cls()
+m_obj.call_hello()
+→ Constructor, object(Abstract Class)
+class name(object):
+def __init__(self):
+self.name = 'Anup'
+def print_name(self):
+print "My Name is :", self.name
+n_obj = name()
+n_obj.print_name()
+Python Examples
+Anup Chavda→ Parameterized Constructor and calling
+class methods with class variables using
+self
+class my_name(object):
+def __init__(self, name):
+self.name = name
+def print_my_name(self):
+print "My Name is : ", self.name
+mn_obj = my_name('Anup Chavda')
+mn_obj.print_my_name()
+→ Calling class methods with external
+parameters
+class my_company_name(object):
+def print_my_company_name(self, name):
+print "My company name is :", name
+mc_obj = my_company_name()
+mc_obj.print_my_company_name('Serpent Consulting Services')
+→ Destructors
+class some_class(object):
+def __init__(self):
+print "Object is being Created"
+def __del__(self):
+print "Object is being Deleted"
+# Call Constructor
+s_obj = some_class()
+# Call Destructor
+del s_obj
+Python Examples
+Anup Chavda→ Inheritance
+class parent_class(object):
+def __init__(self):
+print "CONSTRUCTOR CALLED"
+self.a = 10
+self.b = 20
+def my_method(self):
+print "SELF", self.a
+print "SELF", self.b
+def print_method(self):
+print "PRINT METHOD"
+class child_class(parent_class):
+def child_method(self):
+print "CHILD"
+def call_parent_method(self):
+# Call parent method from child class's method
+self.my_method()
+# Creating an object of child class, also calls the constructor of
+parent class
+ch_obj = child_class()
+# Calling the methods of child class
+ch_obj.child_method()
+# Calling the mthods of parent class
+ch_obj.print_method()
+# Using the member variable of parent class
+print ch_obj.a
+print ch_obj.b
+Python Examples
+Anup Chavda→ Overriding methods using super
+class my_parent(object):
+def __init__(self, a, b):
+self.a = a
+self.b = b
+def add_members(self):
+return self.a + self.b
+class my_child(my_parent):
+def __init__(self, x, y, z):
+# Overriding the parent constructor using super
+super(my_child, self).__init__(x, y)
+self.c = z
+def add_members(self):
+# Overriding the parent class method using super
+res = super(my_child, self).add_members()
+return self.c + res
+# Creating object will call two constructors
+mch_obj = my_child(2, 3, 5)
+#This will call both the methods as the parent method is
+overridden
+mch_obj.add_members()
+Python Examples
+Anup ChavdaI/O in Python
+→ print, input() and raw_input
+# The print method prints whatever you give it after the print
+statement
+# If string use, print "print this message"
+# If some variable you can directly print the variable, print x
+x = 10
+# You can also combine both of them or more with a comma.
+print "The value of x is :", x
+# The input() method scans the input as it's real data type.
+#i.e. if you enter 10 x will be an integer
+# if you enter [1,2,3] x will be a list
+print "Enter Some Value"
+x = input()
+print "Print the Scanned value from User", x, type(x)
+# The raw_input() method scans the input as string
+# i.e. you enter 1, 'a', 10.5, {'a':1},[1,2,3] anything it will be
+string
+print "Enter Some Raw Value"
+y = raw_input()
+print "Print the Scanned Raw Value from User", y, type(y)
+→ File management
+# Open a file 'my_file.txt' in (w)write mode
+# If file not existing it will create the file automatically
+f1 = open('my_file.txt', 'w')
+my_str = '''This is the string to be written in the file.
+This is the second line in file.
+This is the third line in file.'''
+# Write the string on file
+f1.write(my_str)
+# Close the file
+f1.close()
+Python Examples
+Anup Chavda#Open the same file 'my_file.txt' in (r)read mode
+#It is mandatory to have a file when you are reading!
+f2 = open('my_file.txt', 'r')
+#Read the whole file in a string
+my_str = f2.read()
+print "String read from the file", my_str
+#Close File
+f2.close()
+# Open the same file again in read mode
+f3 = open('my_file.txt', 'r')
+#Read single line from the file using the readline() method
+my_line = f3.readline()
+print "Line from the file", my_line
+#Read second line from the file
+my_line2 = f3.readline()
+print "Second line from the file", my_line2
+#Read the third line using another method next()
+my_line3 = f3.next()
+#Close the File
+f3.close()
+# Open the same file again in read mode
+f4 = open('my_file.txt', 'r')
+# Read all the lines and store them in a list where each line is
+an element of list
+str1 = f4.readlines()
+print "Lines of file in List", str1, type(str1)
+f4.close()
+#Open the same file again in (a)append mode
+f5 = open('my_file.txt', 'a')
+my_str = "This is the appended line in the file"
+#Write the string in file but at the bottom of the existing data
+f5.write(my_str)
+#Close the file
+f5.close()
+# Open the same file again in read mode
+f6 = open('my_file.txt', 'r')
+# Seek first four characters in the line to be read
+f6.seek(4)
+Python Examples
+Anup Chavda# Tell the position of the cursor
+res = f6.tell()
+print "cursor pointer position", res
+#Read line
+seeked_line = f6.readline()
+print "Seeked Line", seeked_line
+# Tell the position of the cursor again
+res = f6.tell()
+print "cursor pointer position again", res
+# Read specific number of character from the line
+read_str = f6.read(10)
+print "Read Specific characters from the line", read_str
+#Close the file
+f6.close()
+→ Pickle
+import pickle
+#### Dumping and Retrieving data as it is in file with their
+orignal data type
+x
+y
+z
+a
+b
+c
+=
+=
+=
+=
+=
+=
+10
+4.5
+'help'
+[1, 2, 3]
+(4, 5, 6)
+{'a':1, 'b':2, 'c':3}
+# Open a file in write mode to dump the data in their orignal data
+type
+f1 = open('my_file.data', 'w')
+# Dump the data in the file
+pickle.dump(x, f1)
+pickle.dump(y, f1)
+pickle.dump(z, f1)
+pickle.dump(a, f1)
+pickle.dump(b, f1)
+pickle.dump(c, f1)
+# Close the file
+f1.close()
+Python Examples
+Anup Chavda# Delete the Variables
+del x
+del y
+del z
+del a
+del b
+del c
+# Open the file in read mode to read the dumped data
+f2 = open('my_file.data', 'r')
+new_x = pickle.load(f2)
+print "The Variable x",
+new_y = pickle.load(f2)
+print "The Variable y",
+new_z = pickle.load(f2)
+print "The Variable z",
+new_a = pickle.load(f2)
+print "The Variable a",
+new_b = pickle.load(f2)
+print "The Variable b",
+new_c = pickle.load(f2)
+print "The Variable z",
+f2.close()
+new_x, type(new_x)
+new_y, type(new_y)
+new_z, type(new_z)
+new_a, type(new_a)
+new_b, type(new_b)
+new_c, type(new_c)
+#### Dumping object of a class
+# Create a class
+class dump_class(object):
+def __init__(self):
+self.a = 10
+def print_my_data(self):
+print "DUMPED CLASS DATA", self.a
+#Create an object
+dump_obj = dump_class()
+#Open the file in write mode to dump the object
+f3 = open('my_file.data', 'w')
+#Dump the object of the class in the file
+pickle.dump(dump_obj, f3)
+#Close the file
+f3.close()
+Python Examples
+Anup Chavda#Delete the object
+del dump_obj
+#Re open the file in read mode to load the dumped object
+f4 = open('my_file.data', 'r')
+#Load the dumped object in a new variable
+new_dump_obj = pickle.load(f4)
+#Use the class's method using the newly loaded object from the
+file
+new_dump_obj.print_my_data()
+#Use the class's variable using the object
+print new_dump_obj.a
+Python Examples
+Anup ChavdaException Handling
+→ try - except Avoiding the errors which
+crash the system
+x = [1, 2, 3]
+try:
+print x[3]
+except:
+print "Element is not in list, Please select a proper index!"
+→ using try except displaying the system
+error as print not as an error
+x = [1, 2, 3]
+try:
+print x[3]
+except Exception, e:
+print "Error:", e
+→ Using try - except - else
+x = [1, 2, 3]
+try:
+print x[2]
+except:
+print "Invalid Index!"
+else:
+# Execute this code if there is no exception!
+print "Successful!"
+Python Examples
+Anup Chavda→ Using finally
+x = [1, 2, 3]
+try:
+print x[2]
+except:
+print "Invalid Index!"
+else:
+# Execute this code if there is no exception!
+print "Successful!"
+finally:
+#Execute this statements always no matter there is an
+exception or not!
+print "This will be always called!"
+→ User Defined Exceptions
+# Inheriting the Exception class to generate user defined
+exception
+class My_Exception(Exception):
+def __init__(self, value):
+# Value is the string that will be given as an Error!
+self.value = value
+def __str__(self):
+#Decorate the Error to be displayed like the format
+presented here
+return "MY Exception : " + str(self.value)
+my_list = [15.0, 25.5, 37.3, 45.2]
+# Using user defined exception with try except
+try:
+print my_list[3]
+except:
+# Using user defined exceptions using raise!
+raise My_Exception("You must enter Five Elements!")
+finally:
+print "::The Cleanup has been done!"
+# Using the user defined exceptions without using try except
+if len(my_list) < 4:
+raise My_Exception('The list should have atleast 6 elements!')
+Python Examples
+Anup ChavdaUsing Standard Libraries
+→ os
+#Importing the library(module)
+import os
+# Displaying all the attributes and mehtods of the module
+print dir(os)
+# Using the mehtod from the module
+os.system('ls')
+# The above method is used to execute the linux commands in python
+# Here ls will give you the list of folders and files in your
+current folder/directory
+→ sys
+# Importing Sys Library/Module
+import sys
+# Displaying the version informaiton of python
+print "VERSION INFO", sys.version_info
+# Displaying only the version of python
+print "VERSION", sys.version
+→ platform
+# Importing Platform Library/Module
+import platform
+# Displaying the information about platform i.e. information of
+your os it's version etc.
+print platform.platform()
+Python Examples
+Anup Chavda→ Logging in Python
+# Import logging Library
+import logging
+# Configure the file for logging
+logging_file = 'test.log'
+# Make configurations for logging
+logging.basicConfig(
+# The format of message to be displayed
+format='%(asctime)s : %(levelname)s : %(message)s',
+# The filename where you will log the info
+filename=logging_file,
+# The mode of the file to be opened!
+filemode='w',
+)
+#Display all the attributes and methods of platform
+print dir(logging)
+#Use different log levels to log different messages
+logging.debug("Start of the program")
+logging.info("Doing something")
+logging.warning("Dying now")
+logging.error("Shutdown the system!")
+logging.fatal('It\'s a FATAL ERROR')
+logging.critical('It\'s very Critical')
+→ Using Regular Expressions
+# Import the re Library for regular expressions
+import re
+# If you want to have a character to appear 0 or more times
+x = re.compile('a*')
+res = x.match('a') # Will return Match Object
+print "RES", res
+res = x.match('') # Will return Match Object
+print "RES", res
+res = x.match('aaa') # Will return Match Object
+print "RES", res
+res = x.match('aab') # Will return Match Object
+print "RES", res
+Python Examples
+Anup Chavdares = x.match('b') # Will return Match Object
+print "RES", res
+# If you want to have a character to appear 1 or more times
+x = re.compile('a+')
+#The same way all the above condition will return
+#a match object except the below two ones
+res = x.match('') # Will return None
+print "RES", res
+res = x.match('b') # Will return None
+print "RES", res
+# If you want to match range of characters you use [] for it as
+shown below
+x = re.compile('[a-z]')
+# The above pattern means you can enter any character in the range
+of a to z.
+res = x.match('ax')
+print "RES", res
+# You can also have multiple ranges
+x = re.compile('[a-zA-Z0-9]+')
+res = x.match('aA0')
+#Having specific no of occurances using {n} where n is an integer.
+x = res.compile('[a-zA-Z0-9]{5}')
+res = x.match('a9A78')
+# If you have the above pattern you must enter exactly 5
+characters
+#Having a specific range of characters using {m,n} where m,n are
+integers.
+x = res.compile('[a-zA-Z0-9]{3,7}')
+res = x.match('aA3')
+# Any combination of small or capital letters or digits
+#forming a string of 3 to 7 characters will return a match object.
+#matching the ending of the string using $
+x = res.compile('[a-zA-Z0-9]+[a-z]$')
+res = x.match('aA0bD7fr4Xz')
+# You can have any string but it should end with a small letter
+Python Examples
+Anup Chavda#matching the starting of the string using ^
+x = res.compile('^[a-z][a-zA-Z0-9]+')
+res = x.match('aA0bD7fr4Xz')
+# You can have any string starting with a small letter
+# If I want to match a character that is an operator like +
+x = res.compile('^[a-z]{1}\+[a-z]{1}$')
+res = x.match('a+b')
+####An example to match a Mobile no of India
+x = re.compile('^\+91-[0-9]{10}$')
+res = x.match('+91-9909453634')
+####An example to match an email address
+x = re.compile('^[a-z][a-z0-9._]+@([0-9a-z][0-9a-z-]+.)+[a-z]
+{2,4}$')
+print x.match('anup.chavda@serpentcs.com')
+→ Working with datetime
+from datetime import datetime as dtime
+# print today's date
+current_datetime = dtime.now()
+print "CURRENT DATETIME", current_datetime
+current_datetime = dtime.today()
+print "CURRENT DATETIME", current_datetime
+current_date = current_datetime.date()
+#prints the date format from datetime
+print "Current Date", current_date
+current_date = current_datetime.time()
+#datetime.time(21, 48, 9, 958528)
+#print the time from the datetime
+print "Current Time", current_time
+current_day = current_datetime.day
+#Prints the day in the datetime
+print "Day in the date", current_day
+Python Examples
+Anup Chavdacurrent_month = current_datetime.month
+#Prints the month in the datetime
+print "Month in the date", current_month
+current_year = current_datetime.year
+#Prints the year in the datetime
+print "Year in the date", current_year
+current_hour = current_datetime.hour
+#prints the hour in the datetime
+print "Current Hour", current_hour
+current_minute = current_datetime.minute
+#prints the minute in the datetime
+print "Current Minute", current_minute
+current_second = current_datetime.second
+#prints the second in the datetime
+print "Current Second", current_second
+current_micro_second = current_datetime.microsecond
+#prints the microsecond in the datetime
+print "Current Micro Second", current_micro_second
+current_weekday = current_datetime.weekday()
+# It prints the current week day starting from monday=0
+print "Current Weekday", current_weekday
+curr_time = current.ctime()
+# prints the datetime in the following format
+print "'Tue Jan 22 21:48:09 2013'", curr_time
+iso_cal = curr_time.isocalendar()
+#Prints a tuple having 3 elements current year, week number and
+the no of day starting monday=1
+print "Calendar", iso_cal
+iso_format = curr_time.isoformat()
+#prints the format 'YYYY-MM-DDTHH:MM:SS.ms'
+print "ISO Format", iso_format
+iso_weekday = curr_time.isoweekday()
+#prints the weekday for the date starting monday=1
+Python Examples
+Anup Chavdadt_max = dtime.max
+#datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)
+#print the maximum datetime possible as shown above
+print "dt_max", dt_max
+dt_min = dtime.min
+#datetime.datetime(1, 1, 1, 0, 0)
+#print the minimum date time possible as shown above
+print "dt_min", dt_min
+new_dtime = curr_time.replace(day=25)
+#datetime.datetime(2013, 1, 25, 21, 48, 9, 958528)
+#The day of the date will be replaced by 25 as shown above.
+print "NEW DTIME", new_dtime
+curr_timestruct = curr_time.timetuple()
+#time.struct_time(tm_year=2013, tm_mon=1, tm_mday=22, tm_hour=21,
+tm_min=48, tm_sec=9, tm_wday=1, tm_yday=22, tm_isdst=-1)
+#It prints the time struct as shown above
+print curr_timestruct
+dt_str = curr_time.strftime('%Y-%m-%d %H:%M:%S')
+# Convert the datetime to string
+print "DT STR", dt_str
+new_dt = dtime.strptime(dt_str, '%Y-%m-%d %H:%M:%S')
+#Convert the string to datetime
+print "NEW DT", new_dt
+→ Working with time
+import time
+#Current Datetime
+curr_dt = time.strftime('%Y-%m-%d %H:%M:%S')
+print "CURR_DATE", curr_dt
+#use strptime with time
+curr_dt = time.strptime(curr_dt, '%Y-%m-%d %H:%M:%S')
+print "CUURR",curr_dt
+Python Examples
+Anup Chavda→ Example to work with datetime counting
+your age in years
+my_bday = dtime.date(1985,6,14)
+curr_day = dtime.date.today()
+diff = curr_day - my_bday
+age = diff.days/365
+print "My age is :",age
+→ Example to calculate the no of days of
+training excluding the Sunday
+st_dt = dtime.date(2013,1,16)
+en_dt = dtime.date(2013,1,31)
+interval = en_dt - st_dt
+interval = interval.days
+new_start_date = st_dt
+while new_start_date <= en_dt:
+print "::AAA:",new_start_date.weekday()
+print "::NEW::",new_start_date
+if new_start_date.weekday()==6:
+print "::SUNDAY::",new_start_date
+interval -= 1
+new_start_date += dtime.timedelta(days=1)
+print "::INTERVAL",interval
+Python Examples
+Anup ChavdaPower of Python
+→ Lambda Functions
+def f (x):
+return x**2
+print f(8)
+# Python has lambda function no need to write a function that
+returns any operations performed in one line
+g = lambda x: x**2
+print g(8)
+→ Using inline functions
+#### Inline for loops
+x = [1,2,3,4,5]
+y = []
+for ele in x:
+y.append(ele*ele)
+print y
+#The same thing can be done in one line
+y = [ele*ele for ele in range(1,6)]
+print y
+#### In line for loops with if
+x = [1,2,3,4,5,6,7,8,9,10]
+y = []
+for ele in x:
+if ele%2==0:
+y.append(x)
+print y
+# The same code can be done in one line
+y = [ele for ele in range(1,11) if ele%2==0]
+print y
+Python Examples
+Anup Chavda#### Getting the value based on if condition in one line
+x = [1]
+#x = []
+if x:
+res = x[0]
+else:
+res = 0
+# The above code can be done in one line as below
+res = x and x[0] or 0
+#### You can merge the methods together.
+x = 'Technical Training'
+x_list = x.split(' ')
+x_upper = x_list[0].upper()
+code = x_upper[:4]
+print code
+# The above code can be done in one line
+code = x.split(' ')[0].upper()[:4]
+→ Using Absolute Function
+z = abs(-10)
+# The function returns an absolute value
+print "Absolute Value",z
+→ using Round Function
+# It takes two arguments
+# First a float value and second decimal precision by which you
+want to round,Here 2 means it will round up to 2 decimal precision
+z = round(10.57689033,2)
+# The function returns a rounded value
+# Here it would be 10.58
+print "Rounding",z
+# You can also call the function with 1 parameter
+z = round(19.78363)
+# By default it will take 0 decimal precision as second argument
+# Here the result would be 20.0
+print z
+Python Examples
+Anup Chavda→ Using filter(func,list)
+# The filter is used to filter the elements based on some
+condition using a function
+# This is the list that containts int, string and float elements
+my_list = [1, 2.0, 3, 4.6, 'd', 6, 7]
+# This is a function with only 1 argument based on
+#the filter rules returns True or False
+def check_int(x):
+return isinstance(x,int)
+# filter takes two arguments
+# first argument is a function having one argument and returns
+True or False.
+# second argument is a list from which you want to filter elements
+z = filter(check_int, my_list)
+# The above code can be written using the lambda in just single
+line
+z = filter(lambda x:isinstance(x,int), my_list)
+# filter returns the elements for which the function returns True
+# and omits the elements for which the function returns False
+print z
+→ Using map(func,list)
+# A function having one parameter and returning some value
+# as per the map rules it will have only 1 argument
+def multiply_int(y):
+return y*y
+# The above function returns square of the given element
+# This is a list on which the function will be called
+my_list = [1,2,3,4]
+# map function takes two arguments
+# first is a function which has only 1 argument just like filter
+# but the function returns some value which is stored in the list.
+# second argument is a list on which the function will be called.
+w = map(multiply_int, my_list)
+# The above code can be written in one line using lambda
+w = map(lambda x : x*x, my_list)
+# the result of the map function would be a list
+# having squares of all the elements in my_list.
+print w
+Python Examples
+Anup Chavda→ Using reduce(func, list)
+# The reduce method takes a function having two arguments and a
+list.
+# The function has two arguments unlike the above two
+def add_total(x, y):
+print ":XX:",x
+print "::YYYLL:",y
+return x+y
+# The reduce will pop the first two elements in the list
+# and call the function, the result will be added as first element
+# The function will be called untill there is only 1 element
+# the last element will be the result
+u = reduce(add_total, [1, 2, 3, 4, 5])
+# The above code can be written in one line using lambda
+u = reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
+# The last element remaining in the list will be the result
+# The total of all the numbers = 15
+print u
+→ Using assert
+x = 0
+# This will raise an AssertionError
+#AssertionError: X can not be zero!
+assert x>0,'X can not be zero!'
+→ Using eval
+x = eval("{'a':1}")
+# The eval will take string as an input and converts it to a
+# python recognized data type if it is a valid one
+print x, type(x)
+# This will print x as a dictionary
+x = eval("[1,2,3,4,5]")
+# This will return a list
+print x, type(x)
+x = eval("'Anup'")
+# to eval the string the string needs to be inside quotes.
+print x
+# here it will print the string
+Python Examples
+Anup Chavdaa = 10
+x = eval('a')
+# The eval with a string
+# and if you do not have
+# if you have a variable
+assigned.
+print x,type(x)
+# Here it will print the
+without quotes will consider as a varible
+a variable it will raise error
+the value of the variable will be
+value of a
+→ Using exec
+# exec is used to execute python commands
+# where commands are in string format
+exec 'print "Hello"'
+# This will print Hello.
+# You can read python files line by line and can execute them
+using exec
+# For example
+# Contents of python_test.py
+#x = 10
+#print x
+#
+#y = 20.5
+#print y
+#
+#for i in range(11):
+#
+print i
+# Open the python file in read mode
+f1 = open('python_test.py','r')
+# Read the whole file in a string
+x1 = f1.read()
+# Execute the string which has python code
+exec x1
+Python Examples
+Anup ChavdaREFERENCES
+Books
+– Byte of Python
+– Dive into Python
+Website
+– http://docs.python.org
+Python Examples
+Anup Chavda
